@@ -1,0 +1,56 @@
+body{
+    background-color: rgba(42, 40, 40, 0.729);
+}.body{
+    background-color: #fff;
+    position: absolute;
+    height: 260px;
+    width: 200px;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 100px 100px 100px 100px / 150px 150px 110px 110px;
+
+}
+
+.yolk{
+    position: fixed;
+    background-color: yellow;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    left: 37.5px;
+    top: 110px;
+}
+
+.yolk::before{
+    content: "";
+    position: inherit;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    top: 140px;
+    left: 60px;
+}
+
+.yolk::after{
+    content: "";
+    position: inherit;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    top: 140px;
+    left: 115px;
+}
+.face{
+    content: "";
+    position: fixed;
+    background-color: #000;
+    height: 5px;
+    width: 40px;
+    /* border-radius: 0 0 50% 50%/ 0 0 100% 100%; */
+    z-index: 2;
+    top: 190px;
+    left: 75px;
+}
